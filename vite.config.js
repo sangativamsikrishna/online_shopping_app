@@ -9,7 +9,8 @@ export default defineConfig({
     strictPort: true,
     allowedHosts: [
       'all', // Allow all hosts (or specify explicitly)
-      'online-shopping-app-alb-1480026013.us-east-1.elb.amazonaws.com'
+      'online-shopping-app-alb-1480026013.us-east-1.elb.amazonaws.com', // Added my Application Load Balancer name here
+      'svamsikrishna.in' // Added your domain here
     ],
     cors: true
   }
