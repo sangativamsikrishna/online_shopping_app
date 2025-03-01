@@ -7,7 +7,11 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    allowedHosts: 'all',  // Temporarily allow all hosts
-    cors: true  
+    allowedHosts: [
+      'all', // Allow all hosts (or specify explicitly)
+      'online-shopping-app-alb-1480026013.us-east-1.elb.amazonaws.com'
+    ],
+    cors: true
   }
 });
+
